@@ -1,0 +1,47 @@
+nav {
+  padding-block-start: var(--page-vertical-margin);
+  padding-inline: var(--page-side-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+  user-select: none;
+}
+
+.line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin-block-end: 6px;
+  background-color: black;
+}
+
+.line:nth-child(2) {
+  width: 16px;
+  margin-inline-start: auto;
+}
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.3s ease;
+}
+nav a:hover,
+nav a:focus {
+  outline: none;
+  text-decoration-color: var(--accent);
+}

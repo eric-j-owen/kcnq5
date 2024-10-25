@@ -1,0 +1,12 @@
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --fs-large: 5rem;
+  --fs-med: 3.5rem;
+  --fs-small: 2rem;
+  --fs-body: 1.125rem;
+  --accent: hsl(248, 89%, 65%);
+  --accent-light: hsl(40, 20%, 95%);
+  --page-side-margin: clamp(8px, 2vw + 8px, 16px);
+  --page-vertical-margin: 8px;
+}

@@ -1,4 +1,6 @@
 ---
+import "../styles/01-index.css";
+
 type Props = {
   title: string;
 };
@@ -18,69 +20,8 @@ const { title } = Astro.props;
   </head>
   <body>
     <slot />
+    <script>
+      import "../scripts/nav";
+    </script>
   </body>
 </html>
-<style is:global>
-  :root {
-    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --accent: hsl(248, 89%, 65%);
-    --accent-light: hsl(40, 20%, 91%);
-  }
-  html {
-    font-family: var(--system-ui);
-    background: var(--accent-light);
-  }
-
-  /* reset */
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
-  * {
-    margin: 0;
-  }
-
-  html,
-  body {
-    height: 100%;
-  }
-
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  img,
-  picture,
-  video,
-  canvas,
-  svg {
-    display: block;
-    max-width: 100%;
-  }
-
-  input,
-  button,
-  textarea,
-  select {
-    font: inherit;
-  }
-
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    overflow-wrap: break-word;
-  }
-
-  #root,
-  #__next {
-    isolation: isolate;
-  }
-</style>
