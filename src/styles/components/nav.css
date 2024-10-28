@@ -44,5 +44,5 @@ a {
 nav a:hover,
 nav a:focus {
   outline: none;
-  text-decoration-color: var(--accent);
+  text-decoration-color: var(--accent-light);
 }
