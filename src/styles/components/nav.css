@@ -6,7 +6,7 @@ header {
   top: 0;
 }
 nav {
-  padding-block-start: var(--page-vertical-margin);
+  padding-block: var(--page-vertical-margin);
   padding-inline: var(--page-side-margin);
   display: flex;
   justify-content: space-between;
