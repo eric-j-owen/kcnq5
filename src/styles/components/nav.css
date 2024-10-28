@@ -1,9 +1,24 @@
+header {
+  position: fixed;
+  width: 100vw;
+  height: 3.5vh;
+  left: 0;
+  top: 0;
+}
 nav {
   padding-block-start: var(--page-vertical-margin);
   padding-inline: var(--page-side-margin);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--accent);
+  color: var(--accent-light);
+  height: 100%;
+}
+
+.home-btn {
+  outline: 2px solid var(--accent-light);
+  padding: 2px 4px;
 }
 
 .nav-links {
@@ -26,7 +41,7 @@ nav {
   width: 24px;
   height: 2px;
   margin-block-end: 6px;
-  background-color: black;
+  background-color: var(--accent-light);
 }
 
 .line:nth-child(2) {
