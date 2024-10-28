@@ -1,4 +1,5 @@
 @import "reset.css";
 @import "global.css";
-@import "nav.css";
+@import "components/nav.css";
+@import "pages/index.css";
 @import "media-queries.css";

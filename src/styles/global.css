@@ -3,5 +3,12 @@
 html {
   font-family: var(--system-ui);
   background: var(--accent-light);
-  font-size: var(--fs-body);
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+p {
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem);
 }
