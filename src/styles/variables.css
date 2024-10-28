@@ -9,5 +9,5 @@
   --accent: hsl(248, 89%, 65%);
   --accent-light: #fffafa;
   --page-side-margin: clamp(8px, 2vw + 8px, 16px);
-  --page-vertical-margin: 8px;
+  --page-vertical-margin: 30px;
 }
