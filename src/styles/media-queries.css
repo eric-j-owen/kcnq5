@@ -15,14 +15,16 @@
   }
 
   .nav-links {
-    background-color: lightgray;
+    background-color: var(--accent);
+    color: var(--accent-light);
+    font-size: var(--fs-small);
     flex-direction: column;
     min-height: 100svh;
     width: 55vw;
     position: fixed;
     top: 0;
     right: -100%;
-    padding-block-start: 100px;
+    padding-block-start: 150px;
     transition: right 0.2s ease;
   }
 
