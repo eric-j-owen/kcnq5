@@ -1,6 +1,6 @@
 @import url("../variables.css");
 
-main {
+.index {
   margin-inline: var(--page-side-margin);
   min-height: 90svh;
   display: grid;
