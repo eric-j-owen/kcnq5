@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  margin-block-start: var(--body-block-margin);
+  padding-block-start: var(--body-block-margin);
   margin-inline: var(--page-side-margin);
 }
 
@@ -20,6 +20,17 @@ h1 {
   font-size: var(--fs-large);
 }
 
-p {
-  max-width: 75ch;
+main:not(.index) h1 {
+  position: relative;
+  z-index: 0;
+  margin-block-end: 24px;
+}
+main:not(.index) h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent);
 }
