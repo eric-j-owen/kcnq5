@@ -1,7 +1,7 @@
 @import url("../variables.css");
 
 .index {
-  margin-inline: var(--page-side-margin);
+  margin-block-start: 0;
   min-height: 90svh;
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
