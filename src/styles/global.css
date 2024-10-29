@@ -3,12 +3,23 @@
 html {
   font-family: var(--system-ui);
   background: var(--accent-light);
+  font-size: var(--fs-body);
 }
 
 body {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+main {
+  margin-block-start: var(--body-block-margin);
+  margin-inline: var(--page-side-margin);
+}
+
+h1 {
+  font-size: var(--fs-large);
+}
+
 p {
-  font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem);
+  max-width: 75ch;
 }
