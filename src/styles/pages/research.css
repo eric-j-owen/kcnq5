@@ -1,21 +1,8 @@
 @import url("../variables.css");
 
-.research h1 {
-  position: relative;
-  z-index: 0;
-}
-.research h1::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 15px;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent);
-}
 .research section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
 }
 
