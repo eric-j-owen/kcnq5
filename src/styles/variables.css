@@ -5,10 +5,10 @@
   --fs-large: 5rem;
   --fs-med: 3.5rem;
   --fs-small: 1.5rem;
-  --fs-body: clamp(1rem, 1vw + 0.5rem, 1.25rem);
+  --fs-body: clamp(1.125rem, 1vw + 0.5rem, 1.25rem);
   --accent: hsl(248, 89%, 65%);
   --accent-light: #fffafa;
   --page-side-margin: clamp(8px, 2vw + 8px, 24px);
   --page-vertical-margin: 30px;
-  --body-block-margin: 150px;
+  --body-block-margin: 100px;
 }

@@ -1,1 +1,18 @@
 @import url("../variables.css");
+
+.research .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin-block-start: 16px;
+  gap: 36px;
+}
+
+.research .cards div {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  place-items: center;
+}
+
+.research .cards div h3 {
+  padding-block-end: 16px;
+}
