@@ -1,18 +1,59 @@
 @import url("../variables.css");
+.title {
+  position: relative;
+  background-image: url("side-person.jpg");
+  background-size: 1440px auto;
+  background-position: left center;
+  padding-block: 250px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.intro,
+.research,
+.funding {
+  min-height: 100svh;
+}
+
+.intro h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.about h2 {
+  padding-block-start: 20px;
+}
+
+.about p {
+  padding-block: 20px;
+}
 
 .research .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
   margin-block-start: 16px;
   gap: 36px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .research .cards div {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  padding: 16px;
-  place-items: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  text-align: center;
 }
 
 .research .cards div h3 {
-  padding-block-end: 16px;
+  padding: 8px;
 }

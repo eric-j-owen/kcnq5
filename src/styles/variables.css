@@ -3,7 +3,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --fs-exlg: 7.5rem;
   --fs-large: 5rem;
-  --fs-med: 3.5rem;
+  --fs-med: 3rem;
   --fs-small: 1.5rem;
   --fs-body: clamp(1.125rem, 1vw + 0.5rem, 1.25rem);
   --accent: hsl(248, 89%, 65%);
