@@ -1,7 +1,13 @@
 @import url("../variables.css");
+
+h2,
+h3,
+p {
+  margin-inline: var(--page-side-margin);
+}
 .title {
   position: relative;
-  background-image: url("side-person.jpg");
+  background-image: url("side.jpg");
   background-size: 1440px auto;
   background-position: left center;
   padding-block: 250px;
@@ -41,19 +47,24 @@
 }
 
 .research .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 400px));
   margin-block-start: 16px;
   gap: 36px;
-  max-width: 100%;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .research .cards div {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
   text-align: center;
+  padding: 8px;
+  max-width: 450px;
 }
 
 .research .cards div h3 {
   padding: 8px;
+}
+
+.funding h3 {
+  margin-block-start: 24px;
 }
