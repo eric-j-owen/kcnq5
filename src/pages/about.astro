@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import { Image } from "astro:assets";
+import backgroundImage from "../imgs/side.jpg";
 ---
 
 <Layout title="About | KCNQ5">
@@ -8,6 +10,7 @@ import Header from "../components/Header.astro";
   <main class="about">
     <section class="intro">
       <div class="title">
+        <Image src={backgroundImage} alt="" class="background-image" />
         <h1>Exploring KCNQ5</h1>
       </div>
       <div class="content-wrapper">
