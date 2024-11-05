@@ -1,13 +1,13 @@
 @import url("../variables.css");
 
-h2,
-h3,
-p {
+.about h2,
+.about h3,
+.about p {
   margin-inline: var(--page-side-margin);
 }
 .title {
   position: relative;
-  background-image: url("public/side.jpg");
+  background-image: url("side.jpg");
   background-size: 1440px auto;
   background-position: left center;
   padding-block: 250px;
