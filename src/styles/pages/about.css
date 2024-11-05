@@ -7,7 +7,7 @@
 }
 .title {
   position: relative;
-  background-image: url("side.jpg");
+  background-image: url("src/imgs/side.jpg");
   background-size: 1440px auto;
   background-position: left center;
   padding-block: 250px;
