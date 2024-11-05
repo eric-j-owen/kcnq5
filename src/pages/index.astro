@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import homeImage from "../imgs/index.png";
 import { Image } from "astro:assets";
+import Background from "../components/Background.astro";
 ---
 
 <Layout title="KCNQ5">
@@ -18,6 +19,7 @@ import { Image } from "astro:assets";
       </p>
       <a href="/about">Learn More</a>
     </section>
-    <Image src={homeImage} alt="" class="img" />
+    <!-- <Image src={homeImage} alt="" class="img" /> -->
+    <Background />
   </main>
 </Layout>
