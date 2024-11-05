@@ -11,11 +11,6 @@ body {
   margin: 0 auto;
 }
 
-p {
-  padding-block-start: var(--body-block-margin);
-  margin-inline: var(--page-side-margin);
-}
-
 h1 {
   font-size: clamp(3.9rem, 1vw + 1rem, var(--fs-large));
 }
