@@ -5,6 +5,7 @@
   min-height: 90svh;
   display: flex;
   justify-content: space-between;
+  color: var(--accent-light);
 }
 
 .index section {
@@ -30,19 +31,14 @@
 
 .index p {
   padding-block-start: 48px;
+  margin-block-end: 36px;
 }
 
 .index a {
   display: block;
   max-width: fit-content;
   background-color: var(--accent);
-  color: var(--accent-light);
   padding: 0.75rem;
-  margin-block-start: 24px;
-}
-
-.index .img {
-  width: 550px;
-  height: auto;
-  align-self: center;
+  margin: 0 auto;
+  border-radius: 5%;
 }

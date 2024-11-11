@@ -6,47 +6,24 @@
   margin-inline: var(--page-side-margin);
 }
 
-.title {
-  position: relative;
-  padding-block: 250px;
-  color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+.about {
+  color: var(--accent-light);
 }
 
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+.intro,
+.funding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-}
-
 .intro,
 .research,
 .funding {
   min-height: 100svh;
 }
 
-.intro h1 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.about h2 {
-  padding-block-start: 20px;
+.about p {
+  margin-block-start: 24px;
 }
 
 .about p {
@@ -62,7 +39,7 @@
 }
 
 .research .cards div {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--accent);
   text-align: center;
   padding: 8px;
   max-width: 450px;

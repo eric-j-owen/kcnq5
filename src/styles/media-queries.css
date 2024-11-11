@@ -15,7 +15,7 @@
   }
 
   .nav-links {
-    background-color: var(--accent);
+    background-color: #171723;
     color: var(--accent-light);
     font-size: var(--fs-small);
     flex-direction: column;

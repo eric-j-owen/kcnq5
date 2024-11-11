@@ -1,5 +1,5 @@
 header {
-  background-color: var(--accent);
+  background-color: transparent;
   padding-block: var(--page-vertical-margin);
   padding-inline: var(--page-side-margin);
   position: fixed;

@@ -2,7 +2,7 @@
 
 html {
   font-family: var(--system-ui);
-  background: var(--accent-light);
+  background: #171723;
   font-size: var(--fs-body);
 }
 
@@ -17,5 +17,5 @@ h1 {
 
 h2 {
   font-size: var(--fs-med);
-  border-bottom: 4px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
 }

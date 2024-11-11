@@ -5,6 +5,7 @@ interface DotType {
   vy: number;
   radius: number;
   distance: number;
+  color: string;
   create(): void;
   animate(): void;
 }
@@ -29,8 +30,11 @@ class Background implements BackgroundType {
   }
 
   createDots() {
+    const colors = ["#FFD700", "#FF6347", "#00FFFF"];
+
     for (let i = 0; i < this.totalDots; i++) {
-      let dot = new Dot(this.canvas, this.ctx);
+      let color = colors[Math.floor(Math.random() * colors.length)];
+      let dot = new Dot(this.canvas, this.ctx, color);
       this.dotsArr.push(dot);
       dot.create();
     }
@@ -55,8 +59,12 @@ class Dot implements DotType {
   vy: number;
   radius: number;
   distance: number;
-
-  constructor(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
+  color: string;
+  constructor(
+    canvas: HTMLCanvasElement,
+    ctx: CanvasRenderingContext2D,
+    color: string
+  ) {
     this.canvas = canvas;
     this.ctx = ctx;
     this.x = Math.random() * canvas.width;
@@ -65,11 +73,13 @@ class Dot implements DotType {
     this.vy = -0.5 + Math.random();
     this.radius = Math.random();
     this.distance = 60;
+    this.color = color;
   }
 
   create() {
     this.ctx.beginPath();
     this.ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    this.ctx.fillStyle = this.color;
     this.ctx.fill();
   }
 
@@ -91,7 +101,6 @@ function main() {
   const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  ctx.fillStyle = "#000000";
 
   const bg = new Background(canvas, ctx);
   bg.createDots();
