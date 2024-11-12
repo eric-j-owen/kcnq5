@@ -23,7 +23,7 @@
 .intro,
 .research,
 .funding {
-  min-height: 100svh;
+  min-height: 100vh;
 }
 
 .about p {

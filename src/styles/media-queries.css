@@ -74,4 +74,8 @@
   .index img {
     max-width: 100%;
   }
+
+  .about {
+    padding-block-start: 100px;
+  }
 }
