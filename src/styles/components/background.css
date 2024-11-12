@@ -1,12 +1,10 @@
 #background {
   position: fixed;
-  min-width: clamp(400px, 2vw, 1440px);
-  min-height: 100vh;
+  min-width: 1440px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: -1;
   margin: 0 auto;
-  overflow: hidden;
 }

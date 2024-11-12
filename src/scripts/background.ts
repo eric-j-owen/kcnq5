@@ -1,19 +1,18 @@
+interface BackgroundType {
+  totalDots: number;
+  createDots(): void;
+  updateDots(): void;
+}
+
 interface DotType {
   x: number;
   y: number;
   vx: number;
   vy: number;
   radius: number;
-  distance: number;
   color: string;
   create(): void;
   animate(): void;
-}
-
-interface BackgroundType {
-  totalDots: number;
-  createDots(): void;
-  updateDots(): void;
 }
 
 class Background implements BackgroundType {
@@ -25,7 +24,7 @@ class Background implements BackgroundType {
   constructor(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
     this.canvas = canvas;
     this.ctx = ctx;
-    this.totalDots = 359;
+    this.totalDots = 300;
     this.dotsArr = [];
   }
 
@@ -42,11 +41,10 @@ class Background implements BackgroundType {
 
   updateDots() {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    for (let i = 0; i < this.totalDots; i++) {
-      let dot = this.dotsArr[i];
+    this.dotsArr.forEach((dot) => {
       dot.create();
       dot.animate();
-    }
+    });
   }
 }
 
@@ -58,8 +56,8 @@ class Dot implements DotType {
   vx: number;
   vy: number;
   radius: number;
-  distance: number;
   color: string;
+
   constructor(
     canvas: HTMLCanvasElement,
     ctx: CanvasRenderingContext2D,
@@ -72,7 +70,6 @@ class Dot implements DotType {
     this.vx = -0.5 + Math.random();
     this.vy = -0.5 + Math.random();
     this.radius = Math.random();
-    this.distance = 60;
     this.color = color;
   }
 
@@ -85,11 +82,9 @@ class Dot implements DotType {
 
   animate() {
     if (this.y < 0 || this.y > this.canvas.height) {
-      this.vx = this.vx;
-      this.vy = this.vy * -1;
+      this.vy *= -1;
     } else if (this.x < 0 || this.x > this.canvas.width) {
-      this.vx = this.vx * -1;
-      this.vy = this.vy;
+      this.vx *= -1;
     }
     this.x += this.vx;
     this.y += this.vy;
@@ -99,7 +94,7 @@ class Dot implements DotType {
 function main() {
   const canvas = document.querySelector("#background") as HTMLCanvasElement;
   const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
-  canvas.width = window.innerWidth;
+  canvas.width = 1440;
   canvas.height = window.innerHeight;
 
   const bg = new Background(canvas, ctx);
