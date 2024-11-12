@@ -2,15 +2,13 @@
 .story {
   margin-inline: var(--page-side-margin);
   color: var(--accent-light);
-  padding: 92px 0;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  /* padding-block-start: 64px; */
+  padding-block-start: 120px;
   align-items: center;
-  justify-content: center;
 }
 
 .story p {

@@ -17,13 +17,9 @@
 .funding {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-}
-.intro,
-.research,
-.funding {
-  min-height: 100vh;
+  padding-block-start: 120px;
 }
 
 .about p {
