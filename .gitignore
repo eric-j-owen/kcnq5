@@ -24,3 +24,5 @@ pnpm-debug.log*
 .idea/
 
 dREADME.md
+
+src/utils/env.js
