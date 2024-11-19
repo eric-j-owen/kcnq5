@@ -2,15 +2,12 @@
 .story {
   margin-inline: var(--page-side-margin);
   color: var(--accent-light);
-}
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
+  max-width: 80%;
+  margin: 0 auto;
   padding-block-start: 120px;
-  align-items: center;
 }
 
 .story p {
   max-width: 75ch;
+  margin-block: 48px;
 }

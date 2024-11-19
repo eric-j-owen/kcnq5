@@ -8,6 +8,8 @@
 
 .about {
   color: var(--accent-light);
+  max-width: 80%;
+  margin: 0 auto;
 }
 .about p {
   max-width: 75ch;
@@ -15,15 +17,7 @@
 .intro,
 .research,
 .funding {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
   padding-block-start: 120px;
-}
-
-.about p {
-  margin-block-start: 24px;
 }
 
 .about p {
@@ -32,7 +26,7 @@
 
 .research .cards {
   margin-block-start: 64px;
-  gap: 36px;
+  gap: 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -42,7 +36,7 @@
   border: 1px solid var(--accent);
   font-size: 16px;
   text-align: center;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .research .cards div h3 {
