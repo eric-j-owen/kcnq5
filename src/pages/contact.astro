@@ -6,8 +6,8 @@ import { KEY } from "../utils/env";
 
 <Layout title="Contact | KCNQ5">
   <Header />
-  <main>
-    <h1>Get in Touch</h1>
+  <main class="contact">
+    <h2>Get in Touch</h2>
     <form
       id="contact-form"
       action="https://api.web3forms.com/submit"
@@ -19,20 +19,49 @@ import { KEY } from "../utils/env";
         name="subject"
         value="New Submission from kcnq5.org Contact Form"
       />
+      <div class="contact-inputs">
+        <div class="input">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="First Last"
+            required
+          />
+        </div>
+        <div class="input">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@provider.com"
+            required
+          />
+        </div>
+        <div class="input">
+          <label for="subject">Phone Number (optional)</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="(012) 345 - 6789)"
+            required
+          />
+        </div>
+        <div class="input">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required></textarea>
+        </div>
 
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Submit</button>
+        <button type="submit">Submit</button>
+      </div>
     </form>
   </main>
 </Layout>
