@@ -1,32 +1,38 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import { KEY } from "../utils/env";
 ---
 
 <Layout title="Contact | KCNQ5">
   <Header />
   <main>
     <h1>Get in Touch</h1>
-    <form>
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div>
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required />
-      </div>
-      <div>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
+    <form
+      id="contact-form"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+    >
+      <input type="hidden" name="access_key" value={KEY} />
+      <input
+        type="hidden"
+        name="subject"
+        value="New Submission from kcnq5.org Contact Form"
+      />
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
     </form>
   </main>
 </Layout>
