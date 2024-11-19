@@ -1,12 +1,4 @@
 @media (max-width: 64rem) {
-  .index {
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .index a {
-    margin: 0 auto;
-  }
 }
 
 @media (max-width: 45rem) {
@@ -67,15 +59,12 @@
   .expanded.nav-links {
     width: 100vw;
   }
-  main {
-    padding-inline: 0;
-  }
-
-  .index img {
-    max-width: 100%;
-  }
 
   .about {
     padding-block-start: 100px;
+  }
+
+  .index h1 {
+    letter-spacing: 0.5rem;
   }
 }
