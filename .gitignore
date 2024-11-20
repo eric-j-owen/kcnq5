@@ -25,4 +25,4 @@ pnpm-debug.log*
 
 dREADME.md
 
-src/utils/env.js
+.env

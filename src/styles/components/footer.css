@@ -1,0 +1,12 @@
+footer {
+  font-size: 16px;
+  background-color: var(--accent-dark);
+  color: var(--accent-light);
+  padding: 56px 8px 8px 8px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

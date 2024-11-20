@@ -2,6 +2,7 @@
 @import "global.css";
 @import "components/nav.css";
 @import "components/background.css";
+@import "components/footer.css";
 @import "pages/index.css";
 @import "pages/about.css";
 @import "pages/story.css";
