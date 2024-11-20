@@ -70,4 +70,8 @@
   .index h1 {
     letter-spacing: 0.5rem;
   }
+
+  .footer-content {
+    justify-content: center;
+  }
 }
