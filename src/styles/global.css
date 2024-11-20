@@ -44,7 +44,7 @@ h2::after {
   left: 0;
   width: 80vw;
   height: 2px;
-  animation: growBorder 1s forwards;
+  animation: growBorder 1.5s forwards;
   transform-origin: left;
 }
 
