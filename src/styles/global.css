@@ -7,6 +7,13 @@ html {
   font-size: var(--fs-body);
 }
 
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+
 h1,
 h2 {
   font-family: "Forum", var(--system-ui);

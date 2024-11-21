@@ -1,14 +1,14 @@
+@import url("../variables.css");
+
 footer {
-  font-size: 16px;
+  font-size: 0.68rem;
   background-color: transparent;
   color: var(--accent-light);
-  padding: 56px 8px 8px 8px;
+  place-self: end normal;
+  margin-inline: var(--page-side-margin);
 }
 
 .footer-content {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  gap: 36px;
-  flex-wrap: wrap;
 }

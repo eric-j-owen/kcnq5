@@ -34,10 +34,12 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Header />
-    <Background />
-    <slot />
-    <Footer />
+    <div class="wrapper">
+      <Header />
+      <Background />
+      <slot />
+      <Footer />
+    </div>
     <script>
       import "../scripts/nav";
       import "../scripts/background.ts";
