@@ -8,11 +8,13 @@ nav {
   justify-content: space-between;
   color: var(--accent-light);
   max-width: 1440px;
+  user-select: none;
 }
 
 .home-btn {
   outline: 2px solid var(--accent-light);
   padding: 2px 4px;
+  transition: transform 0.3s ease;
 }
 
 .nav-links {
@@ -51,6 +53,9 @@ nav {
 }
 nav a:hover,
 nav a:focus {
-  outline: none;
   text-decoration-color: var(--accent-light);
+}
+
+.home-btn:hover {
+  transform: scale(1.1);
 }
