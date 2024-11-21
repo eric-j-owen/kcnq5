@@ -4,11 +4,12 @@
   color: var(--accent-light);
   max-width: 75ch;
   margin: 0 auto;
-}
-
-.about {
   display: flex;
   flex-direction: column;
+}
+
+.about section {
+  margin-block-end: 90px;
 }
 
 .about p {
