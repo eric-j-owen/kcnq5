@@ -2,16 +2,13 @@
 
 .about {
   color: var(--accent-light);
-  max-width: 80%;
+  max-width: 75ch;
   margin: 0 auto;
 }
 
 .about {
   display: flex;
   flex-direction: column;
-}
-.about p {
-  max-width: 75ch;
 }
 
 .about p {

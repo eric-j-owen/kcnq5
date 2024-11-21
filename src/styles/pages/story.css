@@ -1,11 +1,10 @@
 @import url("../variables.css");
 .story {
   color: var(--accent-light);
-  max-width: 80%;
+  max-width: 75ch;
   margin: 0 auto;
 }
 
 .story p {
-  max-width: 75ch;
   padding-block: 20px;
 }

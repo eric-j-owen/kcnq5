@@ -7,7 +7,13 @@ html {
   font-size: var(--fs-body);
 }
 
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .wrapper {
+  margin-inline: var(--page-side-margin);
   min-height: 100vh;
   display: grid;
   grid-template-rows: 10vh auto;
@@ -21,12 +27,6 @@ h2 {
 
 nav > a {
   font-family: "Forum", var(--system-ui);
-}
-
-body {
-  max-width: 1440px;
-  margin: 0 auto;
-  margin-inline: var(--page-side-margin);
 }
 
 main {
