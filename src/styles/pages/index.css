@@ -13,7 +13,6 @@
 
 .index section {
   max-width: 75ch;
-  margin-inline: var(--page-side-margin);
 }
 
 .index h1 {

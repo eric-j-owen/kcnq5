@@ -10,8 +10,7 @@ html {
 .wrapper {
   min-height: 100vh;
   display: grid;
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
+  grid-template-rows: 10vh auto;
 }
 
 h1,
@@ -27,6 +26,7 @@ nav > a {
 body {
   max-width: 1440px;
   margin: 0 auto;
+  margin-inline: var(--page-side-margin);
 }
 
 main {

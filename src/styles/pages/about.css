@@ -1,23 +1,17 @@
 @import url("../variables.css");
 
-.about h2,
-.about h3,
-.about p {
-  margin-inline: var(--page-side-margin);
-}
-
 .about {
   color: var(--accent-light);
   max-width: 80%;
   margin: 0 auto;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
 .about p {
   max-width: 75ch;
-}
-.intro,
-.research,
-.funding {
-  padding-block-start: 120px;
 }
 
 .about p {
