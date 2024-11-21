@@ -1,0 +1,20 @@
+---
+type Props = {
+  href?: string;
+  type?: "submit" | "reset" | "button";
+};
+
+const { href, type } = Astro.props;
+---
+
+{
+  href ? (
+    <a class="btn" href={href}>
+      <slot />
+    </a>
+  ) : (
+    <button class="btn" type={type} class="button">
+      <slot />
+    </button>
+  )
+}

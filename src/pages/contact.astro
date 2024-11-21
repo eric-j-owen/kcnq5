@@ -1,7 +1,6 @@
 ---
+import Button from "../components/Button.astro";
 import Layout from "../layouts/Layout.astro";
-
-const KEY = "189e87cc-9bcc-4c02-b2fe-2398c02144be";
 ---
 
 <Layout title="Contact | KCNQ5">
@@ -13,12 +12,17 @@ const KEY = "189e87cc-9bcc-4c02-b2fe-2398c02144be";
       reach out. Fill out the form below and we'll get back to you as soon as
       possible.
     </p>
+
     <form
       id="contact-form"
       action="https://api.web3forms.com/submit"
       method="POST"
     >
-      <input type="hidden" name="access_key" value={KEY} />
+      <input
+        type="hidden"
+        name="access_key"
+        value="189e87cc-9bcc-4c02-b2fe-2398c02144be"
+      />
       <input
         type="hidden"
         name="subject"
@@ -64,7 +68,7 @@ const KEY = "189e87cc-9bcc-4c02-b2fe-2398c02144be";
             required></textarea>
         </div>
 
-        <button type="submit">Submit</button>
+        <Button type="submit">Submit</Button>
       </div>
     </form>
   </main>

@@ -1,0 +1,11 @@
+@import url("../variables.css");
+
+.btn {
+  cursor: pointer;
+  display: block;
+  color: var(--accent-light);
+  max-width: fit-content;
+  background-color: var(--accent);
+  padding: 0.75rem;
+  margin: 0 auto;
+}
