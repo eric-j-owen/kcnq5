@@ -6,6 +6,7 @@ footer {
   color: var(--accent-light);
   place-self: end normal;
   margin-inline: var(--page-side-margin);
+  margin-block-start: 90px;
 }
 
 .footer-content {

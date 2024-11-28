@@ -8,7 +8,8 @@
   flex-direction: column;
 }
 
-.about section {
+.intro,
+.research {
   margin-block-end: 90px;
 }
 
