@@ -28,8 +28,9 @@ import Layout from "../layouts/Layout.astro";
         name="subject"
         value="New Submission from kcnq5.org Contact Form"
       />
+
       <div class="contact-inputs">
-        <div class="input">
+        <div>
           <label for="name">Name</label>
           <input
             type="text"
@@ -37,9 +38,10 @@ import Layout from "../layouts/Layout.astro";
             name="name"
             placeholder="First Last"
             required
+            class="input"
           />
         </div>
-        <div class="input">
+        <div>
           <label for="email">Email</label>
           <input
             type="email"
@@ -47,18 +49,20 @@ import Layout from "../layouts/Layout.astro";
             name="email"
             placeholder="email@provider.com"
             required
+            class="input"
           />
         </div>
-        <div class="input">
+        <div>
           <label for="phone">Phone Number (optional)</label>
           <input
             type="tel"
             id="phone"
             name="phone"
             placeholder="+1 (000) 000 - 0000"
+            class="input"
           />
         </div>
-        <div class="input">
+        <div>
           <label for="message">Message</label>
           <textarea
             id="message"
@@ -66,13 +70,74 @@ import Layout from "../layouts/Layout.astro";
             rows="5"
             placeholder="Your Message"
             minlength="8"
-            required></textarea>
+            required
+            class="input"></textarea>
         </div>
+        <fieldset>
+          <legend>Relation to KCNQ5</legend>
+          <div class="checkbox-container">
+            <input type="checkbox" name="relation" id="doctor" value="doctor" />
+            <label for="doctor">Doctor</label>
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              name="relation"
+              id="scientist"
+              value="scientist"
+            />
+            <label for="scientist">Scientist</label>
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="family_member"
+              name="relation"
+              value="family_member"
+            />
+            <label for="family_member"
+              >Family Member with KCNQ5 Gene Mutation</label
+            >
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              name="relation"
+              id="interested"
+              value="interested"
+            />
+            <label for="interested">Interested Individual</label>
+          </div>
 
+          <div class="checkbox-container other">
+            <input type="checkbox" name="relation" id="other" value="other" />
+            <label for="other">Other</label>
+          </div>
+          <input
+            type="text"
+            id="other_text"
+            name="other_relation"
+            placeholder="Please specify"
+            class="input"
+          />
+        </fieldset>
         <Button type="submit">Submit</Button>
       </div>
     </form>
   </main>
 </Layout>
-
-<style></style>
+<script>
+  const otherCheck = document.querySelector("#other") as HTMLInputElement;
+  const otherText = document.querySelector("#other_text") as HTMLInputElement;
+  if (otherCheck && otherText) {
+    otherCheck.addEventListener("change", function (this: HTMLInputElement) {
+      if (this.checked) {
+        otherText.style.display = "block";
+        otherText.required = true;
+      } else {
+        otherText.style.display = "none";
+        otherText.required = false;
+      }
+    });
+  }
+</script>

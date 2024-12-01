@@ -19,8 +19,7 @@
   padding-block-start: 24px;
 }
 
-input,
-textarea {
+.input {
   width: 100%;
   padding-block-end: 12px;
   margin: 16px 8px;
@@ -30,8 +29,7 @@ textarea {
   color: var(--accent-light);
 }
 
-input:focus,
-textarea:focus {
+.input:focus {
   outline: none;
   border-bottom: 2px solid hsl(248, 89%, 80%);
 }
@@ -40,4 +38,43 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+/* checkbox */
+
+fieldset {
+  border: none;
+}
+
+legend {
+  color: var(--accent-light);
+  margin-block-end: 8px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+#other_text {
+  display: none;
+}
+.checkbox-container input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid hsl(248, 89%, 65%);
+  border-radius: 4px;
+  margin-inline-end: 8px;
+  cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+  background-color: hsl(248, 89%, 65%);
+}
+
+.checkbox-container label {
+  color: var(--accent-light);
+  cursor: pointer;
 }
