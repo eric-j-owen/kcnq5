@@ -14,7 +14,7 @@ nav {
 .home-btn {
   outline: 2px solid var(--accent-light);
   padding: 2px 4px;
-  transition: transform 0.3s ease;
+  transition: outline-offset 0.3s ease;
 }
 
 .nav-links {
@@ -29,8 +29,9 @@ nav {
   display: none;
   z-index: 1;
   user-select: none;
+  background-color: inherit;
+  border: none;
 }
-
 .line {
   display: block;
   width: 24px;
@@ -57,5 +58,8 @@ nav a:focus {
 }
 
 .home-btn:hover {
-  transform: scale(1.1);
+  outline-offset: 2.5px;
+}
+.home-btn:focus {
+  border-bottom: 4px solid white;
 }
