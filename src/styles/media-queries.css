@@ -5,7 +5,7 @@
   .about {
     max-width: 100%;
   }
-  .hamburger {
+  nav > .hamburger {
     display: block;
   }
 

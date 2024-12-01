@@ -18,3 +18,27 @@ const { href, type } = Astro.props;
     </button>
   )
 }
+
+<style>
+  .btn {
+    cursor: pointer;
+    display: block;
+    color: var(--accent-dark);
+    max-width: fit-content;
+    background-color: var(--accent);
+    padding: 0.75rem;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .btn:hover {
+    outline: 2px solid var(--accent);
+    background-color: var(--accent-dark);
+    transform: scale(1.05);
+  }
+</style>

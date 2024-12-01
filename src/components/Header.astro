@@ -18,3 +18,71 @@
     </ul>
   </nav>
 </header>
+
+<style>
+  header {
+    background-color: transparent;
+    padding-block-start: 12px;
+    z-index: 1;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    color: var(--accent-light);
+    max-width: 1440px;
+    user-select: none;
+  }
+
+  .home-btn {
+    outline: 2px solid var(--accent-light);
+    padding: 2px 4px;
+    transition: outline-offset 0.3s ease;
+  }
+
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  button {
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+    user-select: none;
+    background-color: inherit;
+    border: none;
+  }
+  .line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-block-end: 6px;
+    background-color: var(--accent-light);
+  }
+
+  .line:nth-child(2) {
+    width: 16px;
+    margin-inline-start: auto;
+  }
+
+  .nav-links a {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 2.5px;
+    transition: text-decoration-color 0.3s ease;
+  }
+  nav a:hover,
+  nav a:focus {
+    text-decoration-color: var(--accent-light);
+  }
+
+  .home-btn:hover {
+    outline-offset: 2.5px;
+  }
+  .home-btn:focus {
+    border-bottom: 4px solid white;
+  }
+</style>
