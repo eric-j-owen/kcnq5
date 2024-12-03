@@ -7,4 +7,5 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://kcnq5.org",
   integrations: [sitemap()],
+  output: "server",
 });
