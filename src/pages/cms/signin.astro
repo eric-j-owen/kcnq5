@@ -1,14 +1,19 @@
 ---
-export const prerender = false;
-export async function GET() {
-  let number = Math.random();
-  return new Response(
-    JSON.stringify({
-      number,
-      message: `Here's a random number: ${number}`,
-    })
-  );
+const { cookies, redirect } = Astro;
+
+const accessToken = cookies.get("sb-access-token");
+const refreshToken = cookies.get("sb-refresh-token");
+
+if (accessToken && refreshToken) {
+  return redirect("/cms/dashboard");
 }
 ---
 
 <h1>signin</h1>
+<form action="/api/auth/signin" method="post">
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" />
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" />
+  <button type="submit">Login</button>
+</form>
